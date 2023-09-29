@@ -1,1 +1,262 @@
-Que sirve la etiqueta head en HTML
+¿Qué es Node.js?
+Nodo.js es un marco ligero pero potente que se utiliza para crear aplicaciones web
+del lado del servidor. Este entorno de ejecución JavaScript multiplataforma se
+basa en el motor JavaScript V8 de Google. Su diseño es similar al de Event Machine de Ruby
+y Twisted de Python.
+
+¿Por qué utilizar Node.js?
+* Permite a los desarrolladores utilizar JavaScript como lenguaje backend.
+  Node.js permite a los usuarios ejecutar código JavaScript fuera de un navegador,
+  y los desarrolladores pueden utilizar JavaScript tanto en el front-end como en el
+  back-end de una aplicación.
+
+* Node.jses ligero. A través de su modelo de E/S asíncrono basado en eventos, Node.js
+  garantiza que ningún nodo gestione directamente la E/S, lo que lo hace eficiente y ligero.
+
+* Simplifica el trabajo de los desarrolladores gracias a Node Package Manager (NPM).
+  Los desarrolladores no tienen que crearlo todo desde cero, ya que MNP cuenta con una
+  colección de pequeños módulos de software de código abierto que puede descargar y
+  utilizar durante el desarrollo.
+
+¿Por qué Node.js es monohilo?
+Node.js ejecuta el código JavaScript como un único hilo. Esto significa, por tanto,
+que ejecuta este código JavaScript a la vez. Sin embargo, a través de la biblioteca libuv,
+Node.js ejecuta varios hilos que manejan diversas tareas, como la lectura de archivos
+de un disco y las peticiones de red.
+
+¿Cómo gestiona Node.js la concurrencia?
+La concurrencia es una situación en la que una aplicación maneja varias tareas simultáneamente.
+Node.js utiliza bucles de eventos en los que el código asíncrono se empuja al final
+de la cola de eventos. Aunque JavaScript es monohilo, el bucle de eventos permite a Node.js
+realizar operaciones de E/S no bloqueantes descargando las tareas de E/S al núcleo del sistema.
+
+¿Qué es NPM?
+Es el mayor registro de software del mundo, con más de 800.000 paquetes de código.
+Gestor de paquetes Node se instala automáticamente al instalar Node.js.
+
+¿Qué es un bucle de eventos?
+A pesar de que JavaScript es monohilo, un bucle de eventos permite a Node.js
+realizar operaciones de E/S no bloqueantes.
+Siempre que es posible, Node.js descarga las operaciones al núcleo del sistema.
+
+¿Qué son los emisores de eventos?
+Son objetos en Node.js que activan un evento tras enviar un mensaje de que se ha
+completado una determinada acción. Así, los desarrolladores de JavaScript pueden
+escribir código que escuche los eventos de un emisor.
+
+¿Qué es WASI?
+La API WebAssembly System Interface (WASI) implementa la interfaz del sistema WebAssembly.
+WASI utiliza funciones similares a POSIX para dar acceso a las aplicaciones web "sandboxed"
+al sistema operativo subyacente.
+
+¿Qué es REPL?
+Read-Eval-Print-Loop (REPL), en Node.js, es un intérprete de comandos interactivo que procesa
+expresiones Node.js. La línea de comandos, fácil de usar, captura las entradas de código de
+un usuario, las interpreta, imprime los resultados y hace un bucle hasta que el usuario señala
+una salida.
+
+¿Qué es el flujo de control?
+Es cómo controlamos la lógica y el flujo del código en nuestras aplicaciones. Las sentencias
+If pueden controlar el flujo del código hacia una dirección específica basándose en el estado
+de las variables y las salidas de las funciones.
+
+¿Qué es el infierno de las devoluciones de llamada?
+También conocido como la pirámide de la perdición, el infierno de las devoluciones de llamada es
+una situación en la que se anidan múltiples devoluciones de llamada dentro de una función.
+El infierno de las devoluciones de llamada se asocia a la programación asíncrona y hace que
+el código sea difícil de entender y mantener.
+
+¿Qué es el middleware en Node.js?
+El middleware es una función que tiene todo el acceso para responder a un objeto, solicitar un
+objeto y pasar al siguiente middleware en el ciclo de solicitud-respuesta de la aplicación.
+El middleware actúa como conexión entre las aplicaciones, los datos y los usuarios.
+
+¿Qué son los streams de Node.js?
+Los streams son una colección de datos comparable con las matrices y las cadenas. Sin embargo, estos
+streams no tienen por qué caber en la memoria y pueden estar disponibles simultáneamente.
+
+¿Qué es el piping?
+La canalización es el proceso de conectar múltiples flujos. Por ejemplo, puede canalizar los flujos de lectura
+y escritura para permitir la transferencia de datos de un archivo a otro.
+
+¿Qué son los buffers de Node.js?
+Los módulos búfer ofrecen una forma de manejar flujos de datos binarios en un entorno Node.js.
+En Node.js, Búfer es un objeto global; no tiene que importarlo utilizando la palabra clave 'require'.
+
+Puede crear un Buffer vacío de la longitud de 15 utilizando esta sintaxis;
+
+var buf = Buffer.alloc(15);
+
+¿Qué es la programación dirigida por eventos?
+
+Antes de aprender qué es la programación dirigida por eventos, debemos entender estos conceptos;
+
+* Evento-mensajey notificación
+* Productor-fuente de eventos, publicador y emisor
+* Consumidor-sumidero de eventos, suscriptor, receptor y manejador
+* Cola de mensajes-cola de eventos
+
+La programación dirigida por eventos es un concepto en el que el código se escribe para responder
+a eventos. Por ejemplo, podemos tener un sistema automatizado en el que los sensores detecten
+cuándo se alcanza una determinada temperatura.
+
+Tales sistemas tendrán manejadores de eventos que respondan a los eventos y se aseguren de que se
+toma la acción apropiada.
+
+¿Qué es una pirámide de pruebas?
+La pirámide de pruebas muestra la proporción de pruebas unitarias, pruebas de integración y pruebas
+de extremo a extremo necesarias para desarrollar completamente una aplicación. La pirámide de pruebas
+ayuda a desarrollar un conjunto de pruebas sólido y determina la frecuencia y el orden de las
+evaluaciones.
+
+¿Qué es una devolución de llamada "error-first"?
+Las devoluciones de llamada error-first pasan errores y datos. Un objeto de error es lo primero que
+se pasa a esas funciones y lo segundo son los datos asociados. La devolución de llamada "error-first"
+le permite pasar un objeto de error, comprobar si hay algún problema y, a continuación, gestionarlo.
+Si no se detecta ningún problema, sigue adelante con los argumentos posteriores.
+
+¿Qué son las versiones LTS?
+El soporte a largo plazo (LTS) es una versión de software que obtiene un soporte ampliado por parte
+de los desarrolladores. El soporte ampliado puede ser de 2 a 5 años, a diferencia de los
+programas regulares, que sólo obtienen soporte de 6 meses a 1 año.
+
+¿Qué es un módulo URL?
+Un módulo URL dividirá (parseará) una dirección web en partes legibles. Necesita incluir el método
+require() para utilizar el módulo URL.
+
+¿Qué es libuv?
+Libuv es una biblioteca multiplataforma escrita en el lenguaje de programación C, y proporciona un
+estilo de programación asíncrono y dirigido por eventos. Libuv proporciona un bucle de
+eventos y notificaciones de E/S basado en callbacks.
+
+¿Qué son los talones?
+Los stubs son funciones con un comportamiento preprogramado. Los stubs pueden envolver funciones
+existentes o pueden ser anónimos.
+
+Puede utilizar stubs cuando
+
+* Algunas pruebas están fallando debido a errores de conectividad de red y no debido a errores de código.
+* Quiere controlar el comportamiento de un método y forzar el código por un camino específico.
+
+¿Qué es package.json?
+Package.json es el corazón de un proyecto Node.js. Este archivo registra metadatos importantes sobre
+un proyecto que son necesarios antes de publicarlo en NPM. Package.json define los atributos funcionales
+de un proyecto que NPM utiliza para ejecutar scripts, instalar dependencias e identificar el punto de
+entrada al paquete.
+
+¿Qué es el paquete de archivos .json?
+JSON es la forma abreviada de JavaScript Object Notation. Es un formato ligero para transportar y
+almacenar datos y se utiliza a menudo cuando los datos se envían desde un servidor web a una página web.
+
+Un archivo package.json está escrito en formato JSON.
+
+¿Qué es el paquete Express.js?
+Express.js es un framework Node.js con características robustas para crear aplicaciones móviles y web.
+
+Puede instalar este framework web minimalista utilizando este comando;
+npm install express --save
+
+Mencione algunos frameworks utilizados en Node.js.
+
+* Express.js
+* Koa.js
+* Meteor.js
+* Socket.io
+* Nido.js
+* Velas.js
+* Total.js
+* Hapi.js
+
+Mencione algunas características de temporización de Node.js
+* setTimeout/clearTimeout (): Es una función que programa el código para ejecutarse después del
+  tiempo asignado (temporizado en milisegundos)
+* process.nextTick(): Es una función que programa una función de devolución de llamada que debe
+  invocarse en la siguiente iteración del bucle de eventos
+* clearImmediate/setImmediate(): El código se ejecuta después del ciclo del bucle de eventos existente
+* setInterval/clearInterval(): Esta función se utiliza para ejecutar un bloque de código varias veces
+
+Mencione algunas bibliotecas de uso común en Node.js
+* Lodash
+* Async
+* Express.js
+* Karma
+* Axios
+* Gruñido
+* Molecular
+* Cloudinary
+* Moca
+* PM2
+
+¿Qué comando se utiliza para importar librerías externas?
+el comando "require". Por ejemplo, "var http=require ("HTTP")" cargará la biblioteca HTTP.
+
+¿Qué son las llamadas de retorno?
+Son funciones que se llaman después de completar una determinada tarea. Esto permite al programa
+ejecutar otra pieza de código y evita el bloqueo.
+
+¿Qué son los módulos?
+Los módulos son códigos JavaScript reutilizables que ayudan a los desarrolladores a adherirse al
+principio de programación DRY (Don't Repeat Yourself). Estos módulos también ayudan a descomponer
+la lógica compleja en trozos pequeños, sencillos y manejables.
+
+¿Cómo definiría el término E/S?
+E/S es la forma abreviada de entrada/salida. Se refiere a la interacción del programa con la red y
+el disco del sistema. Hablar con bases de datos, leer/describir datos de/a un disco y hacer
+peticiones HTTP son ejemplos de operaciones de E/S.
+
+¿Qué base de datos se utiliza habitualmente con Node.js?
+MongoDB
+
+Describa los códigos de salida de Node.js
+Los códigos de salida son un grupo específico de códigos que finalizan los procesos.
+
+Algunos de los códigos de salida más comunes de Node.js son;
+
+* Fallo de ejecución del manejador
+* Fallo interno de evaluación de JavaScript
+* Excepción fatal no capturada
+* Error fatal
+* Excepción interna
+* No utilizado
+
+¿Qué es un patrón reactor en Node.js?
+El patrón reactor en Node.js se utiliza para evitar el bloqueo de las operaciones de E/S.
+Un patrón reactor tiene un manejador asociado a las operaciones de Entrada/Salida.
+
+Un patrón reactor sigue siendo este patrón
+
+* La aplicación hace peticiones
+* El demultiplexor de eventos reúne estas peticiones y forma colas de eventos
+* Libuv, una biblioteca de E/S asíncrona, ejecuta el demultiplexor de eventos.
+
+Explicar las API asíncronas y no bloqueantes en Node.js
+Cuando se envía un mensaje a través de la arquitectura asíncrona. El servidor almacena la información
+y recibirá una notificación cuando se complete la tarea.
+
+Las API no bloqueantes responden inmediatamente con los datos disponibles. Sin embargo, no bloquea
+las ejecuciones, sino que sigue funcionando según las solicitudes.
+
+Explicación del motor V8 en Node.Js
+V8 JavaScript se desarrolló para los navegadores web Chromium y Google Chrome con el fin de mejorar la
+ejecución de JavaScript en los navegadores web. En lugar de utilizar un intérprete, el V8 traduce el
+código JS a un código más eficiente para conseguir velocidades de ejecución de JavaScript más rápidas.
+
+Diferenciar entre spawn() y fork()
+* Spawn () crea una nueva función y la lanza utilizando la línea de comandos. Esta función crea un
+  módulo node en el procesador, tras lo cual, Node.js lo invoca cuando los procesos hijos devuelven datos.
+* Horquilla() es una instancia de un método spawn() ya existente. El proceso de spawning garantiza
+  que siempre habrá más de un nodo activo que gestione tareas en un momento dado.
+
+Diferencia entre funciones síncronas y asíncronas
+En una función síncrona, el código se ejecuta en una secuencia determinada en función de las instrucciones dadas por el programa.
+
+En una función asíncrona, el código puede ejecutarse en paralelo. La siguiente operación puede
+producirse en una función de este tipo aunque se esté procesando otro proceso.
+
+¿Cómo gestionar paquetes en proyectos Node.js?
+Varios instaladores de paquetes vienen con configuraciones para gestionar paquetes en proyectos Node.js.
+La mayoría de estos paquetes utilizan npm o yarn. Afortunadamente, ambos proporcionan acceso a casi todas las
+bibliotecas JavaScript con funcionalidades ampliadas.
+
+Explicar la función de flujo de control
+Se trata de una pieza de código que se ejecuta entre varias llamadas a funciones asíncronas.
